@@ -1,7 +1,7 @@
 # pyNBS
 This is the python implementation of Network-Based Stratification (NBS, https://www.nature.com/nmeth/journal/v10/n11/full/nmeth.2651.html) with some changes (see below). 
 
-pyNBS.py contains the functions for network propagation and stratification. 
+https://github.com/wzhang1984/pyNBS/blob/master/pyNBS.py contains the functions for network propagation and stratification. 
 pyNBS_cookbook.ipynb shows an example to stratify TCGA Lung Adenocarcinoma patients from a Mutation Annotation Format (MAF) files.
 label2coxph.R is the code for survival analysis.
 
