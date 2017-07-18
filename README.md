@@ -2,7 +2,7 @@
 
 [pyNBS.py](./pyNBS.py) contains the functions for network propagation and stratification. 
 
-[pyNBS_cookbook.ipynb](./pyNBS_cookbook.ipynb) shows an example to stratify TCGA Lung Adenocarcinoma patients from a Mutation Annotation Format (MAF) files.
+[pyNBS_cookbook.ipynb](./pyNBS_cookbook.ipynb) shows an example to stratify TCGA Lung Adenocarcinoma patients from a Mutation Annotation Format (MAF) file.
 
 [label2coxph.R](./label2coxph.R) is the code for survival analysis.
 
