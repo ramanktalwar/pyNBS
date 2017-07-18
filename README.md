@@ -1,4 +1,4 @@
-# The python implementation of Network-Based Stratification of tumor mutations
+# The python implementation of Network-Based Stratification
 
 [pyNBS.py](./pyNBS.py) contains the functions for network propagation and stratification. 
 
