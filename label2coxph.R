@@ -20,8 +20,8 @@ for (i in 1:length(v)) {
     d2=d[,c(1,2,3,4,5,6,i+6)]
     d2$cluster=factor(d2[[v[i]]])
     d2$cluster_relevel <- relevel(d2$cluster, ref = names(which.max(summary(d2$cluster))))
-    cr_OS_simple=tryCatch(coxph(Surv(OS_MONTHS,OS_STATUS)~cluster_relevel,data=d2,control = coxph.control(iter.max = 500, toler.chol = 1e-210)), error = function(e) e)
-    cr_DFS_simple=tryCatch(coxph(Surv(DFS_MONTHS,DFS_STATUS)~cluster_relevel,data=d2,control = coxph.control(iter.max = 500, toler.chol = 1e-210)), error = function(e) e)
+    cr_OS_simple=tryCatch(coxph(Surv(OS_MONTHS,OS_STATUS)~cluster_relevel,data=d2), error = function(e) e)
+    cr_DFS_simple=tryCatch(coxph(Surv(DFS_MONTHS,DFS_STATUS)~cluster_relevel,data=d2), error = function(e) e)
     out[i,1]=v[i]
     out[i,2]=summary(cr_OS_simple)$logtest[3]
     out[i,3]=summary(cr_DFS_simple)$logtest[3]
